@@ -1,3 +1,368 @@
-background{
-    color: aqua
+@font-face{
+	src: url('assets/fonts/brandon-font/brandon-grotesque-black.otf');
+	font-family: 'brandon-grotesque-black';
+}
+
+
+@font-face{
+	src: url('assets/fonts/brandon-font/brandon-grotesque-light.otf');
+	font-family: 'brandon-grotesque-light';
+}
+@font-face{
+	src: url('assets/fonts/brandon-font/Brandon_bld.otf');
+	font-family: 'brandon-grotesque-bold';
+}
+@font-face{
+	src: url('assets/fonts/brandon-font/Brandon_reg.otf');
+	font-family: 'brandon-grotesque-regular';
+}
+body{
+	font-family: 'brandon-grotesque-black';
+	font-family: 'brandon-grotesque-light';
+	font-family: 'brandon-grotesque-bold';
+	font-family: 'brandon-grotesque-regular';
+}
+/* Header Style Start */
+	header{
+		background-image: url('assets/img/header_bg.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		color: #fff;
+		padding-top: 30px;
+		position: relative;
+		z-index: 1;
+	}
+	header:after{
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: #000;
+		left: 0;
+		top: 0;
+		opacity: .4;
+		z-index: -1;
+	}
+	header a{
+		color: #fff;
+		text-decoration: none;
+
+	}
+	.header_content{
+		
+		width: 80%;
+		margin: 150px auto 100px auto ;
+		text-align: center;
+		color: #fff;
+	}
+
+	nav ul li a{
+		font-size: 18px;
+		transition: .5s;
+	}
+	nav ul li a:hover{
+		color: #ccc;
+
+	}
+
+	.header_content p{
+		font-size: 32px;
+		font-family: 'brandon-grotesque-light';
+		opacity: .7;
+	}
+	.header_content h1{
+		font-size: 66px;
+		font-family: 'brandon-grotesque-bold';
+		text-transform: uppercase;
+	}
+	.header_btn{
+		display: block;
+		width: 240px;
+		border-radius: 3px;
+		border: 1px solid #fff;
+		margin: 70px auto;
+		padding: 20px 0px;
+		font-size: 23px;
+		font-family: 'brandon-grotesque-regular';
+
+	}
+	.header_btn:hover{
+		color: #fff;
+		text-decoration: none;
+	}
+
+/* Header Style End */
+
+/* Web Development Area Style Start */
+	.section_padding{
+		padding: 80px 0px;
+	}
+	.web_development h2, .branding h2, .client_section h2, .team_header h2, .section_header h2{
+		font-size: 60px;
+		font-family: 'brandon-grotesque-light';
+		
+	}
+	.web_development h2 span, .branding h2 span, .client_section h2 span, .team_header h2 span, .section_header h2 span{
+		font-size: 60px;
+		font-family: 'brandon-grotesque-bold';
+		color: #000;
+	}
+	.web_development p, .branding p, .header_c p, .team_header p, .section_header p{
+		font-size: 18px;
+		font-family: 'brandon-grotesque-light';
+		color: #777;
+	}
+/* Web Development Area Style End */
+
+/* Branding Area Style Start */
+	.branding{
+		background: #fafafa;
+	}
+/* Branding Area Style End */
+
+/* Service Area Start */
+	.service_area img{
+		float: left
+
+	}
+	.service_area h3, .service_area p{
+		width: 80%;
+		float: right;
+		font-family: 'brandon-grotesque-bold';
+		font-size: 22px
+	}
+	.service_area p{
+		width: 80%;
+		font-size: 18px;
+		font-family: 'brandon-grotesque-regular';
+		opacity: 0.7
+	}
+/* Service Area End */
+
+/* Clients Section Start */
+	.client_section{
+		background-color: #fafafa
+	}
+	.header_c{
+		text-align: center
+	}
+	.header_c p{
+		font-size: 22px;
+	}
+	.c_speech_box{
+		width: 80%
+	}
+	.c_speech_box p:first-child{
+		font-size: 26px;
+		font-family: 'brandon-grotesque-regular';
+		opacity: 0.7;
+		text-align: left;
+		margin-top: 40px;
+	}
+	.c_speech_box p:last-child{
+		color: #7690c5;
+		font-size: 20px;
+		opacity: 0.9;
+	}
+	.client_box_1{
+		padding: 50px 0px
+	}
+	.client_box_2 img{
+		float: right
+	}
+	.client_logo_box{
+		padding: 10px;
+		margin-top: 5px;
+	}
+/* Clients Section End */
+
+/* Team Section Start */
+	.team_section{
+		background-color: #111111;
+		color: white
+	}
+	.team_header span{
+		color: white !important;
+	}
+	.single_team_box{
+		margin-top: 50px;
+	}
+	.single_team_box i{
+		color: white;
+		font-size: 25px;
+		padding: 10px;
+		border-radius: 50%;
+		border: 3px solid white;
+		height: 50px;
+		width: 50px
+	}
+	.single_team_box img{
+		height: 235px;
+		width: 235px;
+		border: 6px solid white;
+		border-radius: 50%
+	}
+	.single_team_box h5{
+		padding: 10px 0px 0px 0px
+	}
+	.team_last_text{
+		padding: 20px;
+		font-family: 'brandon-grotesque-regular';
+		font-size: 20px;
+		width: 60%;
+		margin: auto;
+		color: #777
+	}
+/* Team Section End */
+
+/* Contact Section Start */
+	.contact_section{
+		background-color: #7690c5;
+		padding-top: 80px;
+	}
+	.section_header{
+		color: white;
+	}
+	.section_header span, .section_header p{
+		color: white !important;
+	}
+	.single_text_box i{
+		float: left;
+		color: white;
+		font-size: 25px
+	}
+	.single_text_box p{
+		color: white;
+		font-size: 22px;
+		margin-top: -4px;
+		padding-left: 40px;
+		width: 80%
+	}
+	.single_text_box{
+		padding: 10px;
+		font-family: 'brandon-grotesque-light';
+	}
+	.form_section input[type="text"] , .form_section textarea{
+		width: 80%;
+		height: 55px;
+		border: 2px solid #1289A7;
+		transition: border-color 0.5s ease-out;
+		font-family: 'brandon-grotesque-light';
+	}.form_section input[type="email"]{
+		width: 80%;
+		height: 55px;
+		border: 2px solid #1289A7;
+		transition: border-color 0.5s ease-out;
+		font-family: 'brandon-grotesque-light';
+	}
+	.form_section input[type="email"]{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.form_section textarea{
+		height: 200px
+	}
+	::placeholder{
+		color: green !important;
+		font-size: 15px;
+		opacity: 0.5 !important
+	}
+	.footer_section hr{
+		background-color: #87a0d2 !important;
+		height: 2px;
+		width: 80%;
+		margin-top: 20px
+	}
+	.footer_section p{
+		color: white;
+		font-family: 'brandon-grotesque-light';	
+		opacity: 0.7;
+		text-align: center
+	}
+	.custom_btn{
+		height: 50px;
+		width: 20%;
+		background-color: #e74c3c;
+		margin-top: 30px;
+		float: left;
+		color: white;
+		font-family: 'brandon-grotesque-regular';
+	}
+/* Contact Section End */
+.menu{
+  float: right;
+  line-height: 100px;
+}
+.menu a{
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+  padding-left: 100px
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #3498db;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.content{
+  padding: 0 20px;
+}
+.content img{
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+.content p{
+  text-align: justify;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: 100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
 }
